@@ -1,4 +1,5 @@
 package com.tech.pro.entity;
+import com.tech.pro.enums.UserType;
 import jakarta.persistence.*;
 import lombok.Data;
 import java.util.Set;
@@ -16,6 +17,9 @@ public class Users {
 
     @Column(name = "user_name")
     private String userName;
+
+    @Column(name = "user_type")
+    private UserType userType;
 
     @Column(name = "first_name")
     private String firstName;
