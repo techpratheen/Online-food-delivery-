@@ -1,5 +1,6 @@
 package com.tech.pro.entity;
 
+import com.tech.pro.enums.RestaurantType;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -24,6 +25,9 @@ public class Restaurant {
 
     @Column(name = "cuisine_type")
     private String cuisineType;
+
+    @Column(name = "restaurant_type")
+    private RestaurantType restaurantType;
 
     @Column(name = "opening_hours")
     private String openingHours;
